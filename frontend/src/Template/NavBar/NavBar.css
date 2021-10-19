@@ -1,62 +1,48 @@
-body {
-    background-color: plum;
-    margin: 0%;
-    padding: 0%;
+@charset "UTF-8";
+/*!
+* Start Bootstrap - Clean Blog v6.0.7 (https://startbootstrap.com/theme/clean-blog)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
 }
 
-.logo-image {
-    color: blue;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-/* .App {
-    text-align: center;
-    background-color: aliceblue;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
 }
 
-body {
-    margin: 0%;
-    padding: 0%;
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: box-shadow 0.15s ease-in-out;
 }
-
-.Form {
-    width: 500px;
-    height: 600px;
-    background-color: rgb(203, 230, 240);
-    box-shadow: 3px 3px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
+@media (prefers-reduced-motion: reduce) {
+    .navbar-toggler {
+        transition: none;
+    }
 }
-
-.Form .title {
-    color: white;
-    flex: 20%;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    font-size: 35px;
+.navbar-toggler:hover {
+    text-decoration: none;
 }
-
-.Form .inputs {
-    flex: 80%;
-    width: 100%;
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem;
 }
-
-.inputs input {
-    width: 250px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 6px;
-    border: none;
-    padding-left: 10px;
-    margin-top: 10px;
-}
-
-.inputs #submit {
-    cursor: pointer;
-} */

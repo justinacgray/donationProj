@@ -1,19 +1,14 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import * as Icons from "react-icons/fa";
 import "./NavBar.css";
 import {
-    Image,
     Collapse,
     Navbar,
     NavbarToggler,
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
 } from "reactstrap";
 
 const NavBar = () => {
@@ -24,67 +19,74 @@ const NavBar = () => {
 
     const [showModal, setShowModal] = useState(false);
 
-    const openModal = () => setShowModal(!showModal);
+    // const openModal = () => setShowModal(!showModal);
 
     return (
-        <Fragment>
-            <Navbar className="navbar" color="light" light expand="md">
-                <NavbarBrand href="/" className="logo-image">
-                    {/* <Image
-                        src="./Images/logo-7412069.jpg"
-                        alt=""
-                        fluid
-                        rounded
-                    /> */}
-                    Hesed Works
-                </NavbarBrand>
-                <NavbarToggler onClick={Toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="navbar-container" navbar>
-                        <NavItem className="nav-item">
-                            <Link className="nav-link" to="/about">
+        <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div className="container px-4 px-lg-5">
+                <Link to="/" classNameName="navbar-brand">
+                    <Icons.FaHandHoldingHeart classNameName="hand-heart-logo" />
+                    HESED WORKS
+                </Link>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i className="fas fa-bars"></i>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarResponsive">
+                    <ul className="navbar-nav ms-auto py-4 py-lg-0">
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link px-lg-3 py-3 py-lg-4"
+                                to="/about">
                                 About Us
                             </Link>
-                        </NavItem>
-                        <NavItem className="nav-item">
-                            <Link className="nav-link" to="/contact">
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link px-lg-3 py-3 py-lg-4"
+                                to="/contact">
                                 Contact
                             </Link>
-                        </NavItem>
-                        <NavItem className="nav-item">
-                            <Link className="nav-link" to="/resources">
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link px-lg-3 py-3 py-lg-4"
+                                to="/resources">
                                 Resources
                             </Link>
-                        </NavItem>
-                        <NavItem className="nav-item">
-                            <Link className="nav-link" to="/dashboard">
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link px-lg-3 py-3 py-lg-4"
+                                to="/dashboard">
                                 Dashboard
                             </Link>
-                        </NavItem>
-                        <NavItem className="nav-item">
-                            <Link className="nav-link" to="/fundraiser">
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link px-lg-3 py-3 py-lg-4"
+                                to="/fundraiser">
                                 Current Fundraisers
                             </Link>
-                        </NavItem>
-                        {/* <NavItem className="nav-item">
-                            <Link className="nav-link" to="/give_fundraise">
-                                Give/Fundraise
-                            </Link>
-                        </NavItem> */}
-                        <NavItem className="nav-item">
-                            <Link className="nav-link" to="/contact">
-                                Contact
-                            </Link>
-                        </NavItem>
-                        <NavItem className="nav-item">
-                            <Link className="nav-link" to="/companyForm">
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link px-lg-3 py-3 py-lg-4"
+                                to="/companyForm">
                                 Register/Sigin
                             </Link>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar>
-        </Fragment>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     );
 };
 
