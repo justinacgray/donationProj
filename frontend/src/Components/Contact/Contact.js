@@ -5,16 +5,14 @@ import "./Contact.css";
 
 const Contact = () => {
     return (
-        <Fragment className="contact">
+        <Fragment>
             <Helmet>
                 <title>Contact</title>
             </Helmet>
             <Layout>
-                <div
-                    className="leftSide"
-                    style={{
-                        backgroundImage: `url(./Images/contact_img.jpg)`,
-                    }}></div>
+                <div className="leftSide">
+                    <img src="./Images/contactimg.jpg" alt="about-img" />
+                </div>
                 <div className="rightSide">
                     <h1> Contact Us</h1>
 

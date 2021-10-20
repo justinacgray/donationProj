@@ -24,8 +24,8 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div className="container px-4 px-lg-5">
-                <Link to="/" classNameName="navbar-brand">
-                    <Icons.FaHandHoldingHeart classNameName="hand-heart-logo" />
+                <Link to="/" className="navbar-brand">
+                    <Icons.FaHandHoldingHeart className="hand-heart-logo" />
                     HESED WORKS
                 </Link>
                 <button

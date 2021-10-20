@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Layout from "../../Template/Layout";
 import Helmet from "react-helmet";
-import { Button } from "reactstrap";
 
 // child component to Layout
 const HomePage = () => {
@@ -11,24 +10,27 @@ const HomePage = () => {
                 <title>Home Page</title>
             </Helmet>
             <Layout>
-                <header class="masthead">
-                    <div class="container px-4 px-lg-5 h-100">
-                        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                            <div class="col-lg-8 align-self-end">
-                                <h1 class="text-white font-weight-bold">
-                                    Your Favorite Place for Free Bootstrap
-                                    Themes
+                <header className="masthead">
+                    <div className="container px-4 px-lg-5 h-100">
+                        <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                            <div className="col-lg-8 align-self-end">
+                                <h1 className="text-white font-weight-bold">
+                                    Let's Fund Your Dreams
                                 </h1>
-                                <hr class="divider" />
+                                <hr className="divider" />
                             </div>
-                            <div class="col-lg-8 align-self-baseline">
-                                <p class="text-white-75 mb-5">
-                                    Start Bootstrap can help you build better
-                                    websites using the Bootstrap framework! Just
-                                    download a theme and start customizing, no
-                                    strings attached!
+                            <div className="col-lg-8 align-self-baseline">
+                                <p className="text-white-75 mb-5">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quidem reiciendis nam
+                                    porro impedit nihil provident facere
+                                    laborum, laboriosam excepturi saepe!
+                                    Adipisci ea aut quos consequuntur illo,
+                                    tempore nulla
                                 </p>
-                                <a class="btn btn-primary btn-xl" href="#about">
+                                <a
+                                    className="btn btn-primary btn-xl"
+                                    href="#about">
                                     Find Out More
                                 </a>
                             </div>
@@ -36,23 +38,24 @@ const HomePage = () => {
                     </div>
                 </header>
 
-                <section class="page-section bg" id="about">
-                    <div class="container px-4 px-lg-5">
-                        <div class="row gx-4 gx-lg-5 justify-content-center">
-                            <div class="col-lg-8 text-center">
-                                <h2 class="text-white mt-0">
+                <section className="page-section bg" id="about">
+                    <div className="container px-4 px-lg-5">
+                        <div className="row gx-4 gx-lg-5 justify-content-center">
+                            <div className="col-lg-8 text-center">
+                                <h2 className="text-white mt-0">
                                     We've got what you need!
                                 </h2>
-                                <hr class="divider divider-light" />
-                                <p class="text-white-75 mb-4">
-                                    Start Bootstrap has everything you need to
-                                    get your new website up and running in no
-                                    time! Choose one of our open source, free to
-                                    download, and easy to use themes! No strings
-                                    attached!
+                                <hr className="divider divider-light" />
+                                <p className="text-white-75 mb-4">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ipsa illo reprehenderit
+                                    repudiandae eveniet, officiis suscipit. Qui,
+                                    officiis aut magni quo possimus quisquam id
+                                    magnam velit. Pariatur alias repellendus ab
+                                    deserunt.
                                 </p>
                                 <a
-                                    class="btn btn-light btn-xl"
+                                    className="btn btn-light btn-xl"
                                     href="#services">
                                     Get Started!
                                 </a>

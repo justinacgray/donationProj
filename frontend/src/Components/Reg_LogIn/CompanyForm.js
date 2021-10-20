@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import Layout from "../../Template/Layout";
+import Helmet from "react-helmet";
 import { useForm } from "react-hook-form";
 // import { yupResolver } from "@hookform/resolvers";
 // import * as yup from "yup";
@@ -31,65 +33,67 @@ const CompanyForm = () => {
     // });
     return (
         <Fragment className="form">
-            <h3 className="title">Register/Sign Up</h3>
-            <Form className="">
-                <FormGroup check>
-                    <Label check>
-                        <Input type="radio" name="register" /> Register
-                    </Label>
-                </FormGroup>
-                <FormGroup check>
-                    <Label check>
-                        <Input type="radio" name="login" /> Log In
-                    </Label>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="companyName">Company Name</Label>
-                    <Input
-                        type="text"
-                        name="companyName"
-                        id="companyName"
-                        placeholder="Company Name"
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="dbaName">DBA Name</Label>
-                    <Input
-                        type="text"
-                        name="dbaName"
-                        id="dbaName"
-                        placeholder="DBA Name"
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="companyemail">Company Email</Label>
-                    <Input
-                        type="email"
-                        name="companyemail"
-                        id="companyemail"
-                        placeholder="Company email"
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="examplePassword">Password</Label>
-                    <Input
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="Enter Password"
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="confirmPassword">Confirm Password</Label>
-                    <Input
-                        type="password"
-                        name="confirmpassword"
-                        id="confirmPassword"
-                        placeholder="Retype Password"
-                    />
-                </FormGroup>
-                <Input type="submit" id="submit" />
-            </Form>
+            <Layout>
+                <h3 className="title">Register/Sign Up</h3>
+                <Form className="">
+                    <FormGroup check>
+                        <Label check>
+                            <Input type="radio" name="register" /> Register
+                        </Label>
+                    </FormGroup>
+                    <FormGroup check>
+                        <Label check>
+                            <Input type="radio" name="login" /> Log In
+                        </Label>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="companyName">Company Name</Label>
+                        <Input
+                            type="text"
+                            name="companyName"
+                            id="companyName"
+                            placeholder="Company Name"
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="dbaName">DBA Name</Label>
+                        <Input
+                            type="text"
+                            name="dbaName"
+                            id="dbaName"
+                            placeholder="DBA Name"
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="companyemail">Company Email</Label>
+                        <Input
+                            type="email"
+                            name="companyemail"
+                            id="companyemail"
+                            placeholder="Company email"
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="examplePassword">Password</Label>
+                        <Input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Enter Password"
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="confirmPassword">Confirm Password</Label>
+                        <Input
+                            type="password"
+                            name="confirmpassword"
+                            id="confirmPassword"
+                            placeholder="Retype Password"
+                        />
+                    </FormGroup>
+                    <Input type="submit" id="submit" />
+                </Form>
+            </Layout>
         </Fragment>
     );
 };

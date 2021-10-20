@@ -9,6 +9,7 @@ import CompanyDashboard from "./Components/Dashboard/CompanyDashboard";
 import Resources from "./Components/Resources/Resources";
 import Contact from "./Components/Contact/Contact";
 import CompanyForm from "./Components/Reg_LogIn/CompanyForm";
+import UserForm from "./Components/Reg_LogIn/UserForm";
 import GiveDonate from "./Components/Give_Fundraise/GiveDonate";
 import Fundraise from "./Components/Give_Fundraise/Fundraise";
 
@@ -37,6 +38,7 @@ const Routes = () => {
                 <Route component={Resources} exact path="/resources/" />
                 <Route component={Contact} exact path="/contact/" />
                 <Route component={CompanyForm} exact path="/companyForm/" />
+                <Route component={UserForm} exact path="/userForm/" />
                 <Route component={GiveDonate} exact path="/give_donate/" />
                 <Route component={Fundraise} exact path="/fundraise/" />
             </Switch>

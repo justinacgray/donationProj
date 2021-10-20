@@ -33,14 +33,20 @@ header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
     background-image: url(./Images/pexels-3810796.jpg);
+    opacity: 0.75;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    -moz-box-shadow: 1px 2px 3px rgba(150, 147, 147, 0.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(150, 147, 147, 0.5);
+    box-shadow: 1px 2px 3px rgba(150, 147, 147, 0.5);
 }
 header.masthead h1,
 header.masthead .h1 {
     font-size: 2.25rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 @media (min-width: 992px) {
     header.masthead {
@@ -66,4 +72,10 @@ header.masthead .h1 {
 
 #about {
     background-color: var(--primary-color);
+    padding: 30px;
 }
+
+/* .about-pg {
+    background-image: url(./Images/about-pg.jpg);
+    background-size: cover;
+} */
