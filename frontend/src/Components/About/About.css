@@ -1,0 +1,9 @@
+#about {
+    background-color: var(--primary-color);
+    padding: 30px;
+}
+
+.about-pg img {
+    width: 400px;
+    height: 300px;
+}

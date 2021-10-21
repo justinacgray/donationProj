@@ -69,13 +69,3 @@ header.masthead .h1 {
         font-size: 3.5rem;
     }
 }
-
-#about {
-    background-color: var(--primary-color);
-    padding: 30px;
-}
-
-/* .about-pg {
-    background-image: url(./Images/about-pg.jpg);
-    background-size: cover;
-} */

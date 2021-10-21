@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import Layout from "../../Template/Layout";
 import Helmet from "react-helmet";
+import aboutPg from "../../Images/about-pg.jpg";
+import "./About.css";
 
 const About = () => {
     return (
@@ -12,7 +14,7 @@ const About = () => {
                 <h1>About Us</h1>
 
                 <section className="about-pg">
-                    <img src="./Images/about-pg.jpg" alt="about-img" />
+                    <img src={aboutPg} alt="aboutPg" />
                 </section>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
