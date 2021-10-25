@@ -2,48 +2,40 @@ import React, { Fragment } from "react";
 import Layout from "../../Template/Layout";
 import Helmet from "react-helmet";
 import { useForm } from "react-hook-form";
-// import { yupResolver } from "@hookform/resolvers";
-// import * as yup from "yup";
-import {
-    Button,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-    FormText,
-    Modal,
-    ModalHeader,
-    ModalBody,
-    ModalFooter,
-} from "reactstrap";
+import { useHistory } from "react-router-dom";
+import { Form, FormGroup, Label, Input } from "reactstrap";
+import "./regLog.css";
 
-// typically will go in another file.
-// const schema = yup.object().shape({
-//     companyName: yup.string().required(),
-//     dbaName: yup.string().required(),
-//     companyemail: yup.email().required(),
-//     password: yup.string.min(7).max(15).required,
-//     confirmPassword: yup.string().oneOf([yup.ref("password"), null]), //built in method
-// });
 const submitForm = (data) => {};
 
 const CompanyForm = () => {
+    let history = useHistory();
+
+    const companyOrUserForm = (e) => {
+        // alert(e);
+        if (e === "register") {
+            history.push(e);
+        }
+    };
     // const { register, handleSubmit, errors } = useForm({
     //     resolver: yupResolver(schema),
     // });
     return (
         <Fragment className="form">
             <Layout>
-                <h3 className="title">Register/Sign Up</h3>
-                <Form className="">
+                <Form className="form">
+                    <h3 className="title">Register/Sign Up</h3>
                     <FormGroup check>
                         <Label check>
-                            <Input type="radio" name="register" /> Register
-                        </Label>
-                    </FormGroup>
-                    <FormGroup check>
-                        <Label check>
-                            <Input type="radio" name="login" /> Log In
+                            <Input
+                                type="radio"
+                                name="companyOrUser"
+                                value="register"
+                                onChange={(e) =>
+                                    companyOrUserForm(e.target.value)
+                                }
+                            />
+                            Donor Sign Up
                         </Label>
                     </FormGroup>
                     <FormGroup>

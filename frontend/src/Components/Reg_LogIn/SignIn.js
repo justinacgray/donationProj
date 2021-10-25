@@ -11,20 +11,8 @@ const SignIn = () => {
                 <title>Give/Donate</title>
             </Helmet>
             <Form className="">
-                <FormGroup check>
-                    <Label check>
-                        <Input type="radio" name="company-login" /> Company Log
-                        In
-                    </Label>
-                </FormGroup>
-                <FormGroup check>
-                    <Label check>
-                        <Input type="radio" name="donor-login" />
-                        Donor Log In
-                    </Label>
-                </FormGroup>
                 <FormGroup>
-                    <Label for="companyemail">Company Email</Label>
+                    <Label for="companyemail">Email</Label>
                     <Input
                         type="email"
                         name="companyemail"

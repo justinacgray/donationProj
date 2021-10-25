@@ -8,10 +8,11 @@ import UserDashboard from "./Components/Dashboard/UserDashboard";
 import CompanyDashboard from "./Components/Dashboard/CompanyDashboard";
 import Resources from "./Components/Resources/Resources";
 import Contact from "./Components/Contact/Contact";
-import CompanyForm from "./Components/Reg_LogIn/CompanyForm";
-import UserForm from "./Components/Reg_LogIn/UserForm";
 import GiveDonate from "./Components/Give_Fundraise/GiveDonate";
 import Fundraise from "./Components/Give_Fundraise/Fundraise";
+import Register from "./Components/Reg_LogIn/Register";
+import CompanyForm from "./Components/Reg_LogIn/CompanyForm";
+import UserForm from "./Components/Reg_LogIn/UserForm";
 
 const Routes = () => {
     return (
@@ -37,10 +38,11 @@ const Routes = () => {
                 />
                 <Route component={Resources} exact path="/resources/" />
                 <Route component={Contact} exact path="/contact/" />
-                <Route component={CompanyForm} exact path="/companyForm/" />
-                <Route component={UserForm} exact path="/userForm/" />
                 <Route component={GiveDonate} exact path="/give_donate/" />
                 <Route component={Fundraise} exact path="/fundraise/" />
+                <Route component={Register} exact path="/register/" />
+                <Route component={CompanyForm} exact path="/companyForm/" />
+                <Route component={UserForm} exact path="/userForm/" />
             </Switch>
         </Fragment>
     );
